@@ -1,0 +1,27 @@
+ 
+<!-- ----- debut de la page cave_acceuil -->
+<?php include 'fragment/fragmentCaveHeader.html'; ?>
+<body>
+<div class="parallax">
+  <div class="titre">
+    Bienvenue dans la Cave de l'utt !
+  </div>
+</div>
+  <div class="container">
+    <?php
+    include 'fragment/fragmentCaveMenu.html';
+    ?>
+    <div class="jumbotron">
+      <a href="router2.php?action=vinReadAll"><h1 style="color: white; font-family: Tangerine, sans-serif;">Découvrez nos vins !</h1></a>
+    </div>
+    <div class="jumbotron">
+      <a href="router2.php?action=prodReadAll"><h1 style="color: white; font-family: Tangerine, sans-serif;">Rencontrez nos producteurs !</h1></a>
+    </div>
+    <div class="jumbotron">
+      <a href="router2.php?action=recolteRegion&target=recolteRegionSelected"><h1 style="color: white; font-family: Tangerine, sans-serif;">Explorez nos régions !</h1></a>
+    </div>
+    <?php
+    include 'fragment/fragmentCaveFooter.html';
+    ?>
+<!-- ----- fin de la page cave_acceuil -->
+  </div>

@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+body {
+    background-color: #761c19;
+}
+
+.container {
+    padding-top: 30px;
+    margin-top: 20px;
+    background-color: #ECEDEA;
+    width: 90%;
+    box-shadow: 8px 0px 7px 1px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron {
+    background-color: #761c19;
+    box-shadow: 8px 0px 7px 1px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron2 {
+    padding : 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: 70%;
+    color: inherit;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 8px 0px 7px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.jumbotron3 {
+    padding : 30px;
+    margin-bottom: 30px;
+    width: 70%;
+    color: inherit;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 8px 0px 7px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: table-cell;
+}
+
+.buttonRegion {
+    margin-top : -40px;
+    margin-right: 10px;
+    background: linear-gradient(90deg, #440000 0%, #9c0007 100%);
+    padding: 10px 40px;
+    float: right;
+    position: relative;
+    border-radius: 10px;
+    font-size: 25px;
+    color : white;
+    text-decoration: none;
+    border-bottom: 5px solid #000851;
+    text-shadow: 0px -2px #000851;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.buttonRegion:active {
+    transform : translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(../../public/image/TRUE443997.jpg);
+
+    /* Full height */
+    height: 70%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: "Tangerine", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url(../../public/image/copie_thumb-1920-552146.jpg);
+
+    /* Full height */
+    height: 70%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: "Tangerine", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url(../../public/image/TRUEBarrel_Grapes_Candles_Wine_Bottle_537774_2560x1440.jpg);
+
+    /* Full height */
+    height: 70%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: "Tangerine", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 450px) {
+    .parallax .parallax2 .parallax3 {
+        height: 60%;
+    }
+}
+
+.titre {
+    margin: auto;
+    padding-top: 15%;
+    font-size: 500%;
+}
+
+.dropdown .dropbtn {
+    margin: 0;
+}
+
+@media screen and (max-width: 830px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin-top: 0px;
+        top: 60px;
+        transition: background-color 0.2s;
+        background-color: rgba(99, 11, 456, 0.4);
+
+        z-index: 100;
+    }
+
+    .menu > a:nth-of-type(1) {
+        display: none;
+    }
+
+    .dropdown-content {
+        /* display: none; */
+        flex-direction: column;
+        font-size: 0.9em;
+        align-items: flex-start;
+        top: 20px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        position: absolute;
+    }
+
+    .dropdown-content a {
+        margin-top: 5vh;
+    }
+
+    .menu > * {
+
+        margin-top: 5vh;
+    }
+
+    .header {
+        position: fixed;
+        display: block;
+        width: 100%;
+        background-color: white;
+        height: 60px;
+        z-index: 100;
+        margin-top: 0px;
+        top: 0px;
+    }
+
+    .menu.ferme {
+        transform: translateX(-100%);
+        transition: transform 0.2s;
+        /* display: none; */
+    }
+
+    .menu.ouvert {
+        transform: translateX(0%);
+        transition: transform 0.2s, background-color 0.2s;
+        background-color: rgba(17, 28, 154, 0.9);
+    }
+
+    .dropbtn a {
+        pointer-events: none;
+    }
+
+    .submenu-ouvert a {
+        pointer-events: all;
+    }
+
+
+    .submenu-ouvert .dropdown-content {
+        display: flex;
+    }
+
+    .containerBarre {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    }
+
+    .barre1,
+    .barre2,
+    .barre3 {
+        background-color: black;
+        margin: 5px;
+        width: 30px;
+        height: 3px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    .ouvert .barre1 {
+        -webkit-transform: translate(0px, 10px) rotate(-45deg);
+        -ms-transform: translate(0px, 10px) rotate(-45deg);
+        -o-transform: translate(0px, 10px) rotate(-45deg);
+        transform: translate(0px, 10px) rotate(-45deg);
+    }
+
+    .ouvert .barre2 {
+        opacity: 0;
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+        transform: scaleX(0);
+    }
+
+    .ouvert .barre3 {
+        -webkit-transform: translate(-0.3px, -6px) rotate(45deg);
+        -ms-transform: translate(-0.3px, -6px) rotate(45deg);
+        -o-transform: translate(-0.3px, -6px) rotate(45deg);
+        transform: translate(-0.3px, -6px) rotate(45deg);
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}

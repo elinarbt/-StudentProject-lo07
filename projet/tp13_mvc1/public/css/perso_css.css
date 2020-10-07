@@ -1,0 +1,15 @@
+
+body {
+    background-color: white;
+}
+
+.container {
+    padding-top: 30px;
+    margin-top: 80px;
+    background-color: lemonchiffon;
+    width: 90%;
+}
+
+.jumbotron {
+  background-color:plum;
+}
